@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaiden Suda</title>
+    <meta name="description" content="Marketing strategist focused on brand growth and innovation.">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Single premium font - nothing else needed -->
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap)" rel="stylesheet">
+</head>
+<body>
+    <!-- Minimal cursor effect -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- 
+    ====================================
+    NAVIGATION
+    ====================================
+    Ultra-minimal. Just the essentials.
+    -->
+    <nav class="nav" id="nav">
+        <a href="#home" class="nav-logo">Jaiden Suda</a>
+        
+        <div class="nav-links">
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                <span class="theme-icon"></span>
+            </button>
+        </div>
+        
+        <button class="nav-mobile-btn" id="navMobileBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#work" class="mobile-link">Work</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <main>
+        <!-- 
+        ====================================
+        HERO
+        ====================================
+        Clean. Bold. Immediate.
+        -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-label">Marketing & Strategy</p>
+                <h1 class="hero-title">
+                    <span class="title-line">I help brands</span>
+                    <span class="title-line">
+                        <span class="title-word" id="rotatingWord">grow</span>
+                    </span>
+                </h1>
+                <p class="hero-desc">
+                    Senior marketing student specializing in brand strategy, 
+                    digital campaigns, and innovation.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn-primary">View Work</a>
+                    <a href="resume.pdf" class="btn-ghost" download>Resume ↓</a>
+                </div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="scroll-hint">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- 
+        ====================================
+        METRICS BAR
+        ====================================
+        Quick credibility. Scannable in 2 seconds.
+        -->
+        <section class="metrics">
+            <div class="metrics-grid">
+                <div class="metric">
+                    <span class="metric-value" data-count="12">0</span>
+                    <span class="metric-label">Projects</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value" data-count="3">0</span>
+                    <span class="metric-label">Internships</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value" data-count="150" data-suffix="K+">0</span>
+                    <span class="metric-label">Campaign Reach</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value" data-count="2025">0</span>
+                    <span class="metric-label">Graduating</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+        ====================================
+        WORK / PROJECTS
+        ====================================
+        Focus on results. Minimal decoration.
+        -->
+        <section class="section work" id="work">
+            <header class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Selected Work</h2>
+            </header>
+            
+            <div class="projects">
+                <!-- Project 1 -->
+                <article class="project" data-project="1">
+                    <div class="project-info">
+                        <span class="project-category">Brand Strategy</span>
+                        <h3 class="project-title">Rebranding Campaign for Local Startup</h3>
+                        <p class="project-desc">
+                            Led complete brand refresh resulting in 40% increase in 
+                            brand awareness and 25% growth in customer acquisition.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="project-stat">
+                                <strong>+40%</strong> Brand Awareness
+                            </span>
+                            <span class="project-stat">
+                                <strong>+25%</strong> Customer Growth
+                            </span>
+                        </div>
+                        <button class="project-btn" data-modal="project1">
+                            View Case Study
+                        </button>
+                    </div>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span>01</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 2 -->
+                <article class="project reverse" data-project="2">
+                    <div class="project-info">
+                        <span class="project-category">Digital Marketing</span>
+                        <h3 class="project-title">Social Media Growth Strategy</h3>
+                        <p class="project-desc">
+                            Developed and executed content strategy that grew 
+                            engagement by 180% and follower base by 3x in 6 months.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="project-stat">
+                                <strong>+180%</strong> Engagement
+                            </span>
+                            <span class="project-stat">
+                                <strong>3x</strong> Follower Growth
+                            </span>
+                        </div>
+                        <button class="project-btn" data-modal="project2">
+                            View Case Study
+                        </button>
+                    </div>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span>02</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 3 -->
+                <article class="project" data-project="3">
+                    <div class="project-info">
+                        <span class="project-category">Innovation</span>
+                        <h3 class="project-title">Product Launch Strategy</h3>
+                        <p class="project-desc">
+                            Created go-to-market strategy for new product line, 
+                            achieving 150% of first-quarter sales targets.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="project-stat">
+                                <strong>150%</strong> Sales Target
+                            </span>
+                            <span class="project-stat">
+                                <strong>$50K</strong> Revenue
+                            </span>
+                        </div>
+                        <button class="project-btn" data-modal="project3">
+                            View Case Study
+                        </button>
+                    </div>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span>03</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 4 -->
+                <article class="project reverse" data-project="4">
+                    <div class="project-info">
+                        <span class="project-category">Market Research</span>
+                        <h3 class="project-title">Consumer Insights Study</h3>
+                        <p class="project-desc">
+                            Conducted comprehensive research identifying key market 
+                            opportunities, informing $2M product development decision.
+                        </p>
+                        <div class="project-metrics">
+                            <span class="project-stat">
+                                <strong>500+</strong> Survey Responses
+                            </span>
+                            <span class="project-stat">
+                                <strong>$2M</strong> Decision Impact
+                            </span>
+                        </div>
+                        <button class="project-btn" data-modal="project4">
+                            View Case Study
+                        </button>
+                    </div>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span>04</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 
+        ====================================
+        ABOUT
+        ====================================
+        Personal but professional.
+        -->
+        <section class="section about" id="about">
+            <header class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">About</h2>
+            </header>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        I'm a senior marketing student with a minor in innovation 
+                        and entrepreneurship, passionate about building brands that 
+                        matter.
+                    </p>
+                    <p>
+                        My approach combines analytical thinking with creative 
+                        strategy. I believe great marketing starts with deep 
+                        understanding—of the market, the audience, and the 
+                        problem worth solving.
+                    </p>
+                    <p>
+                        Currently seeking full-time opportunities in brand 
+                        strategy, marketing, or product marketing starting 
+                        Summer 2025.
+                    </p>
+                </div>
+                
+                <div class="about-details">
+                    <!-- Skills -->
+                    <div class="detail-group">
+                        <h3>Expertise</h3>
+                        <ul class="tag-list">
+                            <li>Brand Strategy</li>
+                            <li>Digital Marketing</li>
+                            <li>Market Research</li>
+                            <li>Content Strategy</li>
+                            <li>Campaign Management</li>
+                            <li>Consumer Insights</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tools -->
+                    <div class="detail-group">
+                        <h3>Tools</h3>
+                        <ul class="tag-list">
+                            <li>Google Analytics</li>
+                            <li>Tableau</li>
+                            <li>Adobe Creative Suite</li>
+                            <li>HubSpot</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="detail-group">
+                        <h3>Education</h3>
+                        <p class="education-item">
+                            <strong>B.S. Marketing</strong><br>
+                            Minor in Innovation & Entrepreneurship<br>
+                            <span class="muted">Expected May 2025</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+        ====================================
+        CONTACT
+        ====================================
+        Simple and direct.
+        -->
+        <section class="section contact" id="contact">
+            <header class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Contact</h2>
+            </header>
+            
+            <div class="contact-content">
+                <p class="contact-lead">
+                    Interested in working together? I'd love to hear from you.
+                </p>
+                
+                <div class="contact-links">
+                    <a href="mailto:jaiden.suda@email.com" class="contact-link">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">jaiden.suda@email.com</span>
+                    </a>
+                    <a href="[linkedin.com](https://linkedin.com/in/jaidensuda)" target="_blank" rel="noopener" class="contact-link">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/jaidensuda</span>
+                    </a>
+                </div>
+                
+                <a href="resume.pdf" class="btn-primary large" download>
+                    Download Resume
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+    ====================================
+    FOOTER
+    ====================================
+    Minimal. Just copyright.
+    -->
+    <footer class="footer">
+        <p>© 2025 Jaiden Suda</p>
+    </footer>
+
+    <!-- 
+    ====================================
+    PROJECT MODAL
+    ====================================
+    -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+            
+            <div class="modal-content" id="modalContent">
+                <!-- Content injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
